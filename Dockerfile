@@ -6,6 +6,6 @@ RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula selec
 RUN apt update && apt upgrade -y
 RUN apt install -y curl build-essential git openssh-client wget software-properties-common python-software-properties apt-transport-https
 RUN wget -nc https://dl.winehq.org/wine-builds/Release.key && apt-key add Release.key && apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/ && apt update
-RUN apt-get install --install-recommends winehq-stable
+RUN apt-get install -y --install-recommends winehq-stable
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt install -y nodejs
