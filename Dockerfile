@@ -9,3 +9,4 @@ RUN wget -nc https://dl.winehq.org/wine-builds/Release.key && apt-key add Releas
 RUN apt-get install -y --install-recommends winehq-stable
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt install -y nodejs
+RUN npm install -g bower
