@@ -1,6 +1,6 @@
 
 # Pull base image.
-FROM ubuntu:16:04
+FROM ubuntu:16.04
 RUN dpkg --add-architecture i386
 RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
 RUN apt update && apt upgrade -y
